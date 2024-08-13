@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <style>
+    h1{
+        text-align: center;
+        color: orange;
+    }
+   h2{
+        text-align: center;
+        color:#1a64d6;
+        font-size: 26px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 700;
+    }
+    h3{
+        text-align: center;
+        font-size: x-large;
+    }
+    ul{
+        text-align: center;
+        display: block;
+        list-style-type: none;
+        
+    }
+    li{
+        padding: 20px 0;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 350px;
+        font-family: monospace;
+        transition: all 200ms ease-in-out;
+        font-size: larger;
+    }
+    li:hover{
+    cursor: pointer;
+    background:#fffbef;
+    transition: all 200ms ease-in-out;
+    }
+   
+    button{
+        display: block;
+        margin:20px auto;
+        text-align: center;
+        padding: 16px 24px;
+        border-radius: 30px;
+        background:#1a64d6;
+        border:1pxsolid #1a64d6;
+        color:#fff;
+        font-size: 16px; 
+        line-height: 22px;
+        transition: all 200ms ease;
+        box-shadow:rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+     }
+ button:hover{
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+ }
+        .degrees23{
+        font-size: x-large;
+    }
+    .degrees13{
+        font-weight: lighter;
+    }
+    .codedby{
+        font-family: 'Source Code Pro';
+        font-size: small;
+        letter-spacing: 0.2cqh;
+        word-spacing: 2;
+    }
+    
+  </style>
+  <body>
+    <h1>
+        ⛅
+        </h1>
+    <h2>
+        Currently 21° in Tokyo
+    </h2>
+    <h3>
+       <span class=" degrees13">13° </span><span class="degrees23">/ 23°</span> 
+    </h3>
+    <Ul>
+    <li>
+       <strong> 🌧 Tomorrow</strong> 
+        <br>
+        <br>
+        10° / 22°
+    </li>
+    <li>
+        🌥<strong>Saturday</strong> 
+<br>
+<br>
+    15° / 17°
+    </li>   
+<li>
+    ☀️ <strong>Sunday</strong>
+<br>
+25° / 28°
+</li>
+<br>
+<button>
+    Change City
+</button>
+<br>
+<div class="codedby">
+    Coded by Matt Delac
+</div>
+</body>
+</html>
