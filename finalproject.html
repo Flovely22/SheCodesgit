@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youth Conference</title>
+
+    <style>
+    body{
+     background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    }
+     
+     h1 {
+        text-align: center;
+        color: white;
+        padding: 24px;
+        background-color: grey;
+        font-size: 100;
+      }
+      h2 {
+        color: brown;
+        text-align: center;
+        font-size: x-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+      H3 {
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+      }
+      h4 {
+        color: #606470;
+        font-family: monospace;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+  
+        text-decoration: none;
+        font-weight: bolder;
+        color: aquamarine;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding:20px;
+        background-color: #ffd3b6;
+        
+      }
+      li {
+  
+        color: #4c4e4e;
+        display: inline;
+        padding-inline: 20px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        
+        
+      }
+      li.hover{
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: #1ad6aa;
+      }
+        a.hover{
+      background: #1ad6aa;
+      cursor: pointer;
+        
+     
+      }
+      p {
+        border-color: grey;
+        text-align: center;
+        border: 4px 10px;
+        font-weight: bolder;
+        font-size: x-large;
+        color: #2c786c;
+        line-height: 2cap;
+        
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        resize: both;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1ad6aa;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 40px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #4c4e4e;
+        border: 1px solid #1a64d6;
+      }
+      image {
+        background-color: #1ad6aa;
+        padding: 40px;
+        
+      }
+      .climate {
+        color:darkgreen;
+      }
+      .changes {
+        color:brown;
+      }
+      .whatis {
+        color: black;
+      }
+      .changecli{
+        color:black;
+        text-align: center;
+        font-weight:bolder;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+      }
+      .moreclimate{
+        color: brown;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Africa Climate Change Youth summit</h1>
+    <h2>
+      <span class="whatis">What is</span>
+      <span class="climate"> Climate</span> <span class="changes"> <em>Change?</em></span>
+    </h2>
+
+    <p>
+      <div class="changecli">Climate change describes global warming—the ongoing increase in global
+      average temperature—and its effects on Earth's climate system.
+      </div> <br> <div class="moreclimate">Climate change in a broader sense also includes previous long-term
+      changes to Earth's climate.
+      <a href="http://en.wikipedia.org/wiki/Climate_change"> learn more </a>
+      </div>
+    </p>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/817/original/climate_change_image.jpg?1717051168"
+      width="350" 
+      alt=""
+    />
+    <hr />
+    <h3> <strong>Main Summit Topics</strong></h3>
+    <ul>
+      <li>
+        <a
+          href="http://www.un.org/en/climatechange/science/causes-effects-climate-change"
+          >Causes of climate change
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.icpac.net/news/10-climate-change-impacts-in-east-africa-you-didnt-know-about/"
+        >
+          Impact of climate change 
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.worldwildlife.org/stories/what-s-the-difference-between-climate-change-mitigation-and-adaptation"
+        >
+          Mitigation Strategies</a
+        >
+      </li>
+    </ul>
+    <hr>
+    <button>Join us</button>
+    <h4>Coded by Florence Gakunga</h4>
+    </div>
+  </body>
+  <script>
+    function join() {
+      let firstName = prompt("What is your first name?");
+      let lastName = prompt("What is your last name?");
+      let age = prompt("How old are you?");
+      
+      if (age <= 35 &&  age >= 18 ) {
+        let h2 = document.querySelector("h2");
+          h2.innerHTML =  "Hello 👋👋 " + firstName + " " + lastName + " " + " You can register for the Africa Climate Change Summit🙂!";
+      } else {
+        let h2 = document.querySelector("h2");
+          h2.innerHTML =
+          "Sorry ☹ " + firstName + " " + lastName +" " + "You cannot register for the summit at the moment☹!"
+        ;
+      }
+    }
+    let joinUsButton = document.querySelector("button");
+    joinUsButton.addEventListener("click", join);
+  </script>
+</html>
